@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>余光 · 北岬来信</title>
+<meta name="description" content="雨夜灯塔中的实体光学谜题。固定第一人称视点，点击器物靠近，拖动旋钮，解读留给守灯人的信号。">
+<link rel="stylesheet" href="./src/style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+</head><body>
+<main id="stage"></main><div id="loading" aria-live="polite">正在打开北岬光学室…</div><div id="fade"></div><div id="error" role="alert" hidden></div>
+<aside id="pause" aria-label="暂停与设置" hidden><section><h1>余光 · 北岬来信</h1><p>固定视点 · 无镜头晃动<br>点击器物靠近，拖动或滚轮调整旋钮。<br>点击转轮切换记号；右键或 Esc 退后。<br>快捷观察：1 总览 / 2 光学台 / 3 信号锁 / 4 信件</p><button id="resume">继续值守</button><label>环境与机械音量<input id="audio" aria-label="音量" type="range" min="0" max="1" step=".05" value=".4"></label><label>画面细节<select id="quality"><option value="high">高</option><option value="balanced">流畅</option></select></label><p>进度自动保存在此浏览器。</p><button id="restart">重新开始这一夜</button><div id="restart-confirm" hidden><p>这将清除本章进度。</p><button id="cancel-restart">保留进度</button> <button id="confirm-restart">确认重开</button></div></section></aside>
+<script type="module" src="./src/experience.js"></script>
+</body></html>
